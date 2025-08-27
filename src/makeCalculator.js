@@ -38,7 +38,9 @@ function makeCalculator() {
     },
 
     operate(callback, n) {
-      return callback.call(this, n);
+      callback.call(this, n);
+
+      return this;
     },
   };
 
